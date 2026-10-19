@@ -34,9 +34,9 @@ export default function ProductDetail() {
             </td>
             <td>
               <tr>{id}</tr>
-              <tr> {product.category}</tr>
-              <tr>{product.price.toLocaleString("vn-VN")}đ</tr>
-              <tr>{product.description}</tr>
+              <tr> {product?.category}</tr>
+              <tr>{product?.price.toLocaleString("vn-VN")}đ</tr>
+              <tr>{product?.description}</tr>
             </td>
           </Table>
         </div>
