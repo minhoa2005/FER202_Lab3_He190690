@@ -17,7 +17,13 @@ export default function ProductList() {
       return searchResult && genre;
     });
   };
-
+  const sortProducts = () => {
+    if (sort === "asc") {
+      return filter().sort((a, b) => a.price - b.price);
+    } else if (sort === "desc") {
+      return filter().sort((a, b) => b.price - a.price);
+    }
+    return filter();
   };
   return (
     <div className="container">
